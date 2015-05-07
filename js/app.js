@@ -18,11 +18,11 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['jquery', 'rclist', 'database'],
-    function($, rclist, database) {
+requirejs(['jquery', 'database'],
+    function($, database) {
         $(document).ready(function() {
+
             console.log(database.data.resistor[0]);
-            rclist.test();
         });
     }
 );

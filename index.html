@@ -1,3 +1,62 @@
-<!--This sets the baseUrl to the "scripts" directory, and
-    loads a script that will have a module ID of 'main'-->
-<script data-main="js/app.js" src="js/require.js"></script>
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <title>rc-selector - pixelnfinite</title>
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <link rel="Bookmark" href="favicon.ico">
+    <link href="css/rc-selector.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="panel">
+        <div class="control">
+            <span>RC Selector&nbsp;&copy;&nbsp;Rijn</span>
+        </div>
+        <div class="control">
+            <span>Type</span>
+            <div class="input">
+                <select id="input-type">
+                    <option value="0">Resistor</option>
+                    <option value="1">Capacity</option>
+                </select>
+            </div>
+        </div>
+        <div class="control">
+            <span>Value(Ω/F)</span>
+            <div class="input">
+                <input id="input-value" />
+            </div>
+        </div>
+        <div class="control">
+            <span>Package</span>
+            <div class="input">
+                <select id="input-type">
+                    <option value="0">0805</option>
+                    <option value="1">0603</option>
+                </select>
+            </div>
+        </div>
+        <div class="control">
+            <span>Connection</span>
+            <div class="input">
+                <select id="input-type">
+                    <option value="0">Parallel</option>
+                    <option value="1">Series</option>
+                </select>
+            </div>
+        </div>
+        <div class="control">
+            <span></span>
+            <div class="input">
+                <input type="button" id="input-submit" value="Search" />
+            </div>
+        </div>
+    </div>
+    <script data-main="js/app.js" src="js/require.js"></script>
+</body>
+
+</html>
